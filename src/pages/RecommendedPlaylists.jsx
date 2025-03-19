@@ -92,5 +92,4 @@ const GenrePlaylist = () => {
     </div>
   );
 };
-
 export default GenrePlaylist;
