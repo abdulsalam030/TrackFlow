@@ -1,12 +1,9 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Features
+🎧 Genre-Based Music Discovery – Choose a genre and get a list of songs related to it.
+🔗 Spotify Integration – Fetches real-time music data from Spotify.
+🎨 Clean & Responsive UI – Built with React, Vite, and Tailwind CSS for a smooth user experience.
+🌐 Instant Streaming Links – Click on a song to listen to it directly on Spotify.
+🛠️ Technologies Used
+React (Vite) – Frontend framework
+Spotify API – Fetches song data
+Tailwind CSS – Styling
