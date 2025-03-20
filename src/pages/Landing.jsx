@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Spinners from "../components/spinners";
+import Spinners from "../components/Spinners";
 
 const Landing = () => {
   const [loading, setLoading] = useState(false);

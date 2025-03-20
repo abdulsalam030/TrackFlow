@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchGenres, fetchGenrePlaylists } from "../utils/spotify";
 import spotify from "../assets/spotify.webp";
-import Spinners from "../components/spinners";
-
+import Spinners from "../components/Spinners";
 const GenrePlaylist = () => {
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState("");
