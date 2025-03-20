@@ -14,7 +14,7 @@ const Landing = () => {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-black text-white">
-      <h1 className="text-5xl font-bold mb-6">Welcome to AI Music Playlist</h1>
+      <h1 className="text-5xl font-bold mb-6">Welcome to TrackFlow</h1>
       <button
         onClick={handleLogin}
         className="bg-green-500 text-black px-6 py-3 text-lg font-bold rounded-lg hover:bg-green-600"
@@ -24,5 +24,4 @@ const Landing = () => {
     </div>
   );
 };
-
 export default Landing;

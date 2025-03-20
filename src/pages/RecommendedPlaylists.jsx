@@ -24,7 +24,7 @@ const GenrePlaylist = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-900 text-white min-h-screen">
+    <div className="p-6 bg-gray-900 text-white min-h-screen ">
       <h1 className="text-2xl font-bold mb-4 text-center">
         Spotify Genre Playlists
       </h1>

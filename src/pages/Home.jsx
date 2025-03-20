@@ -36,25 +36,30 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-start min-h-screen bg-gray-900 text-white px-4 py-6 space-y-8">
       {user ? (
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-lg">
-          <img
-            src={user.images?.[0]?.url || "https://via.placeholder.com/100"}
-            alt="Profile"
-            className="w-20 h-20 rounded-full mx-auto mb-3 border-4 border-green-500"
-          />
-          <h1 className="text-2xl font-bold">Welcome, {user.display_name}</h1>
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-2xl shadow-xl text-center max-w-lg mx-auto transform transition duration-300 hover:scale-105">
+          <div className="relative">
+            <img
+              src={user.images?.[0]?.url || "https://via.placeholder.com/100"}
+              alt="Profile"
+              className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-green-400 shadow-lg"
+            />
+            <div className="absolute bottom-2 right-2 bg-green-500 w-4 h-4 rounded-full border-2 border-gray-900"></div>
+          </div>
+          <h1 className="text-3xl font-extrabold text-white mb-2">
+            Welcome, {user.display_name}
+          </h1>
         </div>
       ) : (
         <p className="text-md font-semibold">Loading user data...</p>
       )}
 
-      <div className="w-full text-center">
+      <div className="w-full text-center mt-[-60px]">
         <div
           className="relative bg-cover bg-center h-[40vh] flex flex-col items-center justify-center text-center px-4"
           style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
         >
           <h1 className="text-4xl font-bold mb-2">
-            Discover and Create Personalized Playlists{" "}
+            Discover your Personalized Playlists{" "}
           </h1>
           <p className="text-md text-gray-300 mb-3">
             Your personalized music experience starts here.
@@ -67,17 +72,9 @@ const Home = () => {
 
       <div className="container mx-auto px-4">
         <RecommendedPlaylists />
-        <Playlists />
+        {/* <Playlists /> */}
       </div>
     </div>
-
-    // <div className="flex flex-col items-center min-h-screen bg-gray-900 text-white px-4 py-6 space-y-8">
-    //   {user && (
-    //     <h1 className="text-2xl font-bold">Welcome, {user.display_name}</h1>
-    //   )}
-    //   <RecommendedPlaylists />
-    //   {/* <Playlists /> */}
-    // </div>
   );
 };
 
