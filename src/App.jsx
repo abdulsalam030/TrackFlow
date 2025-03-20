@@ -12,9 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/callback" element={<AuthCallback />} />
+        {/* <Route path="/callback" element={<AuthCallback />} /> */}
         <Route path="/home" element={<Home />} />
-        {/* <Route path="/playlists" element={<Playlists />} /> */}
       </Routes>
     </Router>
   );
