@@ -13,6 +13,7 @@ const Landing = () => {
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(
       redirectUri
     )}&scope=${encodeURIComponent(scopes)}`;
+    setLoading(false);
   };
 
   return (
