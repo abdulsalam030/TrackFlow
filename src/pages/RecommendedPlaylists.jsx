@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { fetchGenres, fetchGenrePlaylists } from "../utils/spotify";
 import spotify from "../assets/spotify.webp";
+import Spinners from "../components/spinners";
 
 const GenrePlaylist = () => {
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState("");
   const [playlists, setPlaylists] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const loadGenres = async () => {
@@ -19,8 +21,10 @@ const GenrePlaylist = () => {
 
   const fetchPlaylists = async () => {
     if (!selectedGenre) return;
+    setLoading(true);
     const data = await fetchGenrePlaylists(selectedGenre);
     setPlaylists(data);
+    setLoading(false);
   };
 
   return (
@@ -41,12 +45,12 @@ const GenrePlaylist = () => {
             </option>
           ))}
         </select>
-
         <button
           onClick={fetchPlaylists}
-          className="px-4 py-2 bg-green-500 rounded-md hover:bg-green-600"
+          className="px-4 py-2 bg-green-500 rounded-md hover:bg-green-600 flex items-center justify-center relative w-44"
         >
-          Get Playlists
+          <span className="mr-2">Get Playlists</span>
+          {loading && <Spinners />}
         </button>
       </div>
 

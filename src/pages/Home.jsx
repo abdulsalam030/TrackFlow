@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Playlists from "./Playlists";
+import Spinners from "../components/spinners";
 import RecommendedPlaylists from "./RecommendedPlaylists";
 const Home = () => {
   const [user, setUser] = useState(null);
