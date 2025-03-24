@@ -8,6 +8,7 @@ const Landing = () => {
     setLoading(true);
     const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
     const redirectUri = import.meta.env.VITE_SPOTIFY_REDIRECT_URI;
+    console.log(clientId);
     const scopes =
       "user-top-read playlist-read-private user-read-recently-played";
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(
