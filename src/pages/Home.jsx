@@ -63,9 +63,9 @@ const Home = () => {
           <p className="text-md text-gray-300 mb-3">
             Your personalized music experience starts here.
           </p>
-          <button className="bg-green-500 text-black px-5 py-2 rounded-lg text-md font-semibold hover:bg-green-600">
+          {/* <button className="bg-green-500 text-black px-5 py-2 rounded-lg text-md font-semibold hover:bg-green-600">
             Start Listening
-          </button>
+          </button> */}
         </div>
       </div>
 
