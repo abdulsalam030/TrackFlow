@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/13b067e7-c7c9-42c9-871e-95b4706e1de9)
+
+
 🚀 Features
 
 🎧 Genre-Based Music Discovery – Choose a genre and get a list of songs related to it.
